@@ -1,4 +1,4 @@
-# Week 1 Java Note
+# 0.Introduction to Java(before lecture)
 
 Zhouzhou Zhang
 
@@ -132,5 +132,24 @@ Print random number
 
     System.out.println(r.nextInt());
 
+# 1.(Lecture 1)
 
+Jan 13 Mon 2025, Zhouzhou
+
+## jshell
+
+jshell is obviously a shell of java. Just like the interepter of Python.
+
+    $ jshell --version
+    jshell 23.0.1
+
+To enter jshell, type in "jshell" in a shell.
+
+    $ jshell
+    jshell> ...
+
+To exit jshell, press ctrl + D or type in "/exit?
+
+    jshell> /exit
+    good bye
 
