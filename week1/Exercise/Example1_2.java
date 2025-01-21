@@ -1,5 +1,7 @@
 package Exercise;
 
+import LabSheet1.FileInput;
+
 public class Example1_2 {
     private void displayFileContent(String filename){
         FileInput fileIn = new FileInput(filename);

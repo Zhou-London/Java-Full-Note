@@ -132,7 +132,7 @@ Print random number
 
     System.out.println(r.nextInt());
 
-# 1.(Lecture 1)
+# Lecture 1
 
 Jan 13 Mon 2025, Zhouzhou
 
@@ -152,4 +152,14 @@ To exit jshell, press ctrl + D or type in "/exit?"
 
     jshell> /exit
     good bye
+
+# Lecture 2
+
+Jan 15 Wed 2025, Zhouzhou
+
+## JVM
+
+JVM is Java Virtual Machine. It doesn't emulate CPU but only interept Java bytecode. 
+Unlike C compiler where all the code can not be changed after compiling, Java's bytecode
+can be changed dynamically.
 
