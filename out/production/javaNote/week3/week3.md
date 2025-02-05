@@ -55,7 +55,7 @@ Integer and Double which are the object-verison of these primitive types.
 
 Primitive is copied by its value. Objects are copied by its reference. They are both copied
 when passing to a method but the mechanism is kind of different. Note that no matter if it is
-copied by its value or copid by its reference, they are both copied, so they are both called
+copied by its value or copied by its reference, they are both copied, so they are both called
 "call by value" but not "call by reference". In "call by reference", the data is not copied. 
 However, Java doesn't support this thing, C++ does.
 
@@ -65,3 +65,14 @@ However, Java doesn't support this thing, C++ does.
     a; //return 11
 
 # Lecture 8
+
+Jan 29, Zhouzhou
+
+## Design Principles in OOD
+
+-   Design Patterns
+- Refactoring: The process to refine the code
+- Unit Testing and TDD: 
+- Dependencies and dependency injection
+- Composition over inheritance
+- Low of Demeter

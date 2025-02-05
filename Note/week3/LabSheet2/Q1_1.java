@@ -32,17 +32,12 @@ public class Q1_1 {
                 charCount += line.length();
                 countWords(line);
             }
-        } catch (FileNotFoundException e) {
-            System.out.println("File not found: " + filename);
-        } catch (IOException e) {
-            System.out.println("I/O exception: " + filename);
-        }
+        } catch (FileNotFoundException e) {System.out.println("File not found: " + filename);
+        } catch (IOException e) {System.out.println("I/O exception: " + filename);}
     }
 
     private void countWords(String line) {
         Matcher matcher = Pattern.compile("\\b[a-zA-Z]+\\b").matcher(line);
-        while (matcher.find()) {
-            wordCount++;
-        }
+        while (matcher.find()) {wordCount++;}
     }
 }
