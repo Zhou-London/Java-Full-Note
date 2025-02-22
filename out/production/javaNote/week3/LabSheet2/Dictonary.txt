@@ -1,1 +1,1 @@
-{goodbye=He doesn't want to fuck you!}
+{goodbye=He doesn't want to fuck you!, hello=He wants to fuck you!}

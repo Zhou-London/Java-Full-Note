@@ -4,4 +4,4 @@ Zhouzhou, Feb 3 Mon
 
 ## Abstract Class
 
-Abstract class is a super class
+Things about OOP in Java. Nothing special!

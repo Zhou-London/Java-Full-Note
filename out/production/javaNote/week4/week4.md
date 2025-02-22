@@ -23,7 +23,7 @@ exception is better.
 
 ## Stack
 
-Error Handling is considered a stack. Stack is a queue which is Last-In-First-Out. I guess ENGF34 has
+Error Handling is considered a **stack**. Stack is a queue which is Last-In-First-Out. I guess ENGF34 has
 taught you about it. A stack can push and pop values, the last value pushed is the first value
 being popped. The ArrayList in Java can be used as a stack too so don't you really need to
 implement one on your own. One thing you should notice is the notion of generic, which is discussed
@@ -76,7 +76,7 @@ be better.
 
 ## Try and catch
 
-You are not probably write many ifs for a long code block. That's why we need try and catch. Try
+You are not probably write many ifs for a long code block. That's why we need **try** and **catch**. Try
 will run a block of code and catch will catch the errors specified. catch should take an argument
 which is a class of Exception. There are many classes of Exception, such as NumberFormatException...
 
@@ -97,14 +97,14 @@ When it comes to File IO, we can use try with resources.
 
 ## Exception Class
 
-The following is the hierarchy of Exception Class.
+The following is the hierarchy of **Exception Class**.
 
 -   Throwable
 - Error (extends throwable)
 - Exception (extends throwable)
 - RuntimeException (extends Exception)
 
-You can define your own Exception class using inheritance.  
+You can define your own **Exception class** using inheritance.  
 
     class MyException extends Exception
     {
@@ -118,3 +118,57 @@ can have more methods and variables.
 -   A String storing the message
 - getMessage() to return that string
 - printStackTrace() to print the stack frames
+
+# Lecture 11
+
+Feb 5 Wed
+
+## Catch and Throw
+
+The invalid state inside one method can throw an exception, while such exception is not caught
+inside this method. In most cases, it is caught in another method that called this method. Suppose
+there is function A and B where B called A and A is throwing exceptions. The exception thrown by A is
+caught by B rather than A itself.
+
+    //In A
+    try{
+        q.B();
+    } catch (Exception e){
+        //handle
+    }
+
+If the exception thrown by A is not caught by B, the program will **terminate** immediately(just like
+you always do! Haha!).  For example, **Stack** doesn't catch its own exceptions hence it is your job
+to catch them whenever you call it!
+
+    try{
+        s = s.pop();
+    } catch ( StackException e ){
+        //handle
+    }
+        
+## When to use Exceptions?
+
+-   Exception is not a substitute for using return!
+- Exception can be used when the method can not be proceeded under such situation.
+- Checked Exceptions (compile-time exceptions) must be handled.
+
+## Inheritance
+
+I know you guys are familiar with this definition, from Python, C++ or whatever so I don't tend
+to explain what it is and how is it useful. Let's focus on the syntax of inheritance in Java.
+
+    //C++
+    class Circle: public Shape{
+    ...
+    }
+
+    #Python
+    class Circle(Shape):
+        ...
+
+Java uses single inheritance, not like C++ where you can inherit as much as you want(this is always
+the reason why we think C++ is way more much complex). An abstract class is such class that some methods
+are remain implemented and would be inherited from others(virtual class in C++). A concrete class does not have any
+methods that has not been implemented. 
+
